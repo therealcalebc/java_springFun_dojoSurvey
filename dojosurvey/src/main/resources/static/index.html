@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Dojo Survey</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<form action="/submit" method="post">
+			<div class="upper">
+				<div class="row">
+					<label for="nameInput">Your Name:</label>
+					<input id="nameInput" type="text" name="name">
+				</div>
+				<div class="row">
+					<label for="locationSelect">Dojo Location:</label>
+					<select id="locationSelect" name="location"></select>
+				</div>
+				<div class="row">
+					<label for="languageSelect">Favorite Language:</label>
+					<select id="languageSelect" name="language"></select>
+				</div>
+			</div>
+			<div class="lower">
+				<label for="commentArea">Comment (optional):</label>
+				<textarea rows="3" cols="33"></textarea>
+			</div>
+			<div class="footer">
+				<button type="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
